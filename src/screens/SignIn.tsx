@@ -2,7 +2,9 @@ import { Heading, VStack, Icon, useTheme } from "native-base";
 
 import { Envelope } from "phosphor-react-native"
 import Logo from "../assets/logo_primary.svg";
+
 import { Input } from "../components/input";
+import { Button } from "../components/Button";
 
 interface ImageProps {
   src?: string;
@@ -39,6 +41,7 @@ export function SignIn() {
         width={"100%"}
         secureTextEntry={true}
       />
+      <Button />
     </VStack>
   )
 }
